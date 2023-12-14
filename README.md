@@ -74,7 +74,7 @@ $ pip install pika
 
 1. Команда установки pip
 
-        `sudo apt install python3-pip
+        `sudo apt install python3-pip`
 
 2. Установка pika
 
