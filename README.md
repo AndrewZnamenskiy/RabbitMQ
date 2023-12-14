@@ -149,29 +149,29 @@ $ rabbitmqadmin get queue='hello'
 
 1. Для сборки кластера, все ноды должны иметь одинаковый файл .erlang.cookie
 
-        `scp /var/lib/rabbitmq/.erlang.cookie root@192.168.101.61:/var/lib/rabbitmq/`
+        scp /var/lib/rabbitmq/.erlang.cookie andy@192.168.101.61:/var/lib/rabbitmq/
 
 2. На втором ноде полним
 
-	`sudo systemctl restart rabbitmq-server`
+	sudo systemctl restart rabbitmq-server
 	
-	`sudo rabbitmqctl stop_app`
+	sudo rabbitmqctl stop_app
 
-	`sudo rabbitmqctl join_cluster rabbit@rmq1`
+	sudo rabbitmqctl join_cluster rabbit@rmq1
 
-	`sudo rabbitmqctl start_app`
+	sudo rabbitmqctl start_app
 
 3. На первой ноде выполним
 
-        `sudo rabbitmqctl cluster_status`
+        sudo rabbitmqctl cluster_status
 
 4. Выполните следующую команду для создания новой политики ha-all, которая позволит всем очередям быть зеркалированными на всех узлах кластера RabbitMQ.
 
-	`sudo rabbitmqctl set_policy ha-all ".*" '{"ha-mode":"all","ha-sync-mode":"automatic"}'`
+	sudo rabbitmqctl set_policy ha-all ".*" '{"ha-mode":"all","ha-sync-mode":"automatic"}'
 
 5. Проверка политик
 
-	`sudo rabbitmqctl list_policies`
+	sudo rabbitmqctl list_policies
 
 
 #### Скриншоты к Заданию 3
