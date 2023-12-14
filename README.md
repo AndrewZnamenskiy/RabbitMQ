@@ -167,11 +167,11 @@ $ rabbitmqadmin get queue='hello'
 
 4. Выполните следующую команду для создания новой политики ha-all, которая позволит всем очередям быть зеркалированными на всех узлах кластера RabbitMQ.
 
-	sudo rabbitmqctl set_policy ha-all ".*" '{"ha-mode":"all","ha-sync-mode":"automatic"}'
+	'sudo rabbitmqctl set_policy ha-all ".*" '{"ha-mode":"all","ha-sync-mode":"automatic"}''
 
 5. Проверка политик
 
-	sudo rabbitmqctl list_policies
+	'sudo rabbitmqctl list_policies'
 
 
 #### Скриншоты к Заданию 3
