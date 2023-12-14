@@ -19,9 +19,11 @@
 
 2. Проверка сервиса RabbitMQ
 
-	`sudo systemctl is-enabled rabbitmq-server sudo systemctl status rabbitmq-server`
+	`sudo systemctl is-enabled rabbitmq-server`
 
-3. Включение plug-in Managment
+	`sudo systemctl status rabbitmq-server`
+
+4. Включение plug-in Managment
 
 	`sudo rabbitmq-plugins enable rabbitmq_management`
 
