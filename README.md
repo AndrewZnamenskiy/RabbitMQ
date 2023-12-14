@@ -74,11 +74,11 @@ $ pip install pika
 
 1. Команда установки pip
 
-        `sudo apt install python3-pip`
+        sudo apt install python3-pip
 
 2. Установка pika
 
-        `pip install pika`
+        pip install pika
 
 *Для проверки очередей в RabbitMQ использовались два скрипта Python, имимтирующих работу датчиков*
 *давления и температуры. Текст скриптов приложен в git c именами producer2.py и consumer2.py.*
