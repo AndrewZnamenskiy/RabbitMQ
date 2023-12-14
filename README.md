@@ -102,7 +102,7 @@ $ pip install pika
 
 *Очередь опустошена после запуска consumer2.py*
 
-![Commit Task2](https://github.com/AndrewZnamenskiy/RabbitMQ/blob/main/img/task2p3.png)
+![Commit Task2](https://github.com/AndrewZnamenskiy/RabbitMQ/blob/main/img/task2p4.png)
 
 
 
