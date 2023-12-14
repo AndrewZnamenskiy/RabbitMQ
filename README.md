@@ -152,7 +152,7 @@ $ rabbitmqadmin get queue='hello'
         scp /var/lib/rabbitmq/.erlang.cookie andy@192.168.101.61:/var/lib/rabbitmq/
 
 2. На втором ноде полним
-
+```
 	sudo systemctl restart rabbitmq-server
 	
 	sudo rabbitmqctl stop_app
@@ -160,7 +160,7 @@ $ rabbitmqadmin get queue='hello'
 	sudo rabbitmqctl join_cluster rabbit@rmq1
 
 	sudo rabbitmqctl start_app
-
+```
 3. На первой ноде выполним
 
         sudo rabbitmqctl cluster_status
