@@ -153,7 +153,7 @@ $ rabbitmqadmin get queue='hello'
 
         scp /var/lib/rabbitmq/.erlang.cookie andy@192.168.101.61:/var/lib/rabbitmq/
 
-2. На втором ноде полним
+2. На втором ноде выполним
 ```
 	sudo systemctl restart rabbitmq-server
 	
